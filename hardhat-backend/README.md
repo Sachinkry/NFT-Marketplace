@@ -1,0 +1,2 @@
+CeloNFT contract address:  0x4Afe504335F7E46018Bc5ED7E175381bE68dD65A
+NFTMarketplace contract address:  0x8a029FfbAe40b417D40Ff4CA0CeFCb5f5e77F0c3
