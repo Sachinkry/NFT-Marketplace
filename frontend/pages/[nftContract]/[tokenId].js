@@ -196,6 +196,7 @@ export default function NFTDetails() {
                                         <input
                                             type="text"
                                             placeholder="New Price (in CELO)"
+                                            className={styles.input}
                                             value={newPrice}
                                             onChange={(e) => {
                                                 if (e.target.value === "") {
@@ -205,18 +206,24 @@ export default function NFTDetails() {
                                                 }
                                             }}
                                         ></input>
-                                        <button disabled={updating} onClick={updateListing}>
+                                    </div>
+                                    <div className={styles.btnContainer}>
+
+                                        <button
+                                            disabled={updating}
+                                            onClick={updateListing}
+                                            className={styles.btn}
+                                        >
                                             Update Listing
                                         </button>
+                                        <button
+                                            className={styles.btn}
+                                            disabled={canceling}
+                                            onClick={cancelListing}
+                                        >
+                                            Cancel Listing
+                                        </button>
                                     </div>
-
-                                    <button
-                                        className={styles.btn}
-                                        disabled={canceling}
-                                        onClick={cancelListing}
-                                    >
-                                        Cancel Listing
-                                    </button>
                                 </>
                             )}
 
