@@ -184,6 +184,7 @@ export default function NFTDetails() {
                                     <a
                                         href={`https://alfajores.celoscan.io/address/${listing.buyer}`}
                                         target="_blank"
+                                        rel="noreferrer"
                                     >
                                         {listing.buyer}
                                     </a>
