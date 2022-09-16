@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { createClient } from 'urql';
 import { SUBGRAPH_URL } from "../constants";
 import { useAccount } from 'wagmi';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function Home() {
   // State variables to contain active listings and signigy a loading state
